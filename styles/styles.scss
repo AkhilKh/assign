@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$color_white : white ;
+$bg_color : blueviolet;
+
+//GLobal Component Style- Header, Footer, Menu
+.navbar-default {
+    background-color:$bg_color !important;
+    margin-bottom: 0% !important;
+}
+
+.nav.navbar-nav li a {
+    color: $color_white !important;
+}
+
+.navbar-default .navbar-brand {
+    color: $color_white !important;
+    font-weight: bold !important;
+    font-family: cursive !important;
+}
+
+.right_menu {
+    float: right !important;
+}
+
+.footer {
+    background-color: $bg_color;
+width: 100%;
+bottom: 0%;
+padding: 2% 0% 5% 4%;
+
+
+.footer_section {
+    display: grid;
+    }
+}
+
+//Home Page
+
+.slide_box {
+    height: 488px;
+}
+
+ .slide_image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slide_text {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color_white;
+    font-size: xxx-large;
+}
+
+
+.image_width {
+    width: 100%;
+}
+
+.margin {
+    margin: 0 10px 0 10px;
+}
+
+//nested - Home about section
+.mid_section {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px 10px 20px;
+    
+    .about_image_div{
+        flex: 0.35;
+        background-size: cover;
+
+        .about_image {
+            height: 100%;
+            width: 100%;
+        }
+        }
+    
+    .about_section {
+        flex: 0.65;
+        margin-left: inherit;
+    }
+}
+
+//Home blog section
+.blog_home_section {
+    width: 70%;
+    height: 100px;
+    margin: 2% 18%;
+        display: flex;
+    
+}
+
+.add_section {
+    color: white;
+}
+
+.contact_section {
+    color: white;
+    grid-column: 12;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+
+.font_color_white {
+    color: white;
+}
+
+.font_family_mono {
+    font-family: monospace;
+}
+
+
+// Contact Form Style
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form_style {
+      margin: 2% 30%;
+  }
+
+  .heading {
+      text-align: center;
+      margin-top: 2%;
+      padding: 2%;
+  }
+
+//   blog style
+.blog_img {
+    height: 300px;
+    width: 50%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.blog_section {
+    margin: 5% 10%;
+background-color: wheat;
+}
+
+.blog_para {
+    text-align: justify;
+    padding: 1%;
+}
+
+@media (max-width: 769px) {
+    .mid_section {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+margin: auto;
+text-align: center;
+    }
+
+    .about_section {
+        text-align: justify;
+        margin: auto;
+    }
+
+    .add_section {
+       text-align: center;
+    }
+
+    .form_style {
+        margin: 3% 3%;
+    }
+
+    .blog_section {
+        margin: 5% 3%;
+    }
+
+    .blog_img {
+        height: 150px;
+        width: 70%;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact_section {
+        color: white;
+    }
+
+    .footer {
+        position: inherit;
+    }
+
+    .footer_section {
+        display: flex;
+        flex-direction: column;
+        
+        }
+
+        .slide_box {
+            height: 200px;
+        }
+
+        .slide_text {
+            top: 17%;
+            font-size:large;
+        }
+
+        .blog_home_section {
+            width: 70%;
+            height: 100px;
+            margin: 2% 18%;
+                display: flex;
+            
+        }
+
+    
+}
